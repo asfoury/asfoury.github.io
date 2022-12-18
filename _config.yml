@@ -5,5 +5,10 @@ plugins:
 domain: asfoury.github.io       # if you want to force HTTPS, specify the domain without the http at the start, e.g. example.com
 url: https://asfoury.github.io  # the base hostname and protocol for your site, e.g. http://example.com
 
+
+title: [Netflix VS Prime]
+description: [A short description of your site's purpose]
+
+
 remote_theme: pages-themes/slate@v0.2.0
 
