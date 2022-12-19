@@ -2,13 +2,11 @@
 layout: default
 ---
 
-Text can be **bold**, _italic_, or ~~strikethrough~~.
+# Graph 1 
 
-[Link to another page](./another-page.html).
+This chart shows the percentage of total sales that each product category contributes. The x-axis represents the product categories, while the y-axis shows the percentage of total sales. The chart reveals that the largest contributor to total sales is the "Fashion" category, which makes up 35% of total sales. The "Electronics" category is the second largest contributor, making up 25% of total sales. The "Home goods" category comes in third, making up 20% of total sales. The "Outdoor equipment" and "Toys" categories make up the remaining 20% of total sales, with each category contributing 10% of total sales. Overall, this chart illustrates the relative importance of each product category in terms of its contribution to the company's total sales.
 
-There should be whitespace between paragraphs.
-
-There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.
+{% include plotly_graph.html %}
 
 # Header 1
 
