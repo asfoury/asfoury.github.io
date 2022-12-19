@@ -6,7 +6,7 @@ domain: asfoury.github.io       # if you want to force HTTPS, specify the domain
 url: https://asfoury.github.io  # the base hostname and protocol for your site, e.g. http://example.com
 
 
-title: [Does Netflix have better quality movies than Amazon Prime?]
+title: ["Does Netflix have better quality movies than Amazon Prime?"]
 description: [An exploration of the two streaming services to try and answer which one has better quality movies]
 
 
