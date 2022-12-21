@@ -2,34 +2,43 @@
 layout: default
 ---
 
-# Introduction
+# The Streaming war 
 
-Streaming services’ market is considerably growing each year. They are revolutionizing the movie industry. For a long period of time, Netflix was dominating the market in all aspects. Now the streaming war is raging on. The King is being overtaken by growing competitors like Disney plus, Amazon Prime and HBO. To come on top of this furious battle, each streaming service is now launching its own content in addition to acquiring old content. For consumers, choosing which streaming platform to subscribe to is becoming harder than ever. Our goal is to provide insights on which platform offers the best value for movie lovers and help users make informed decisions when choosing a streaming service. We will focus on analyzing movies available on Netflix and Amazon Prime to determine which platform offers a better selection. We will be using data on movie ratings, genre, and other relevant features to compare the two platforms.
+Streaming services’ market is considerably growing each year. They are revolutionizing the movie industry. For a long period of time, Netflix was dominating the market in all aspects. Now the streaming war is raging on. The King is being overtaken by growing competitors like Disney plus, Amazon Prime and HBO. To come on top of this furious battle, each streaming service is now launching its own content in addition to acquiring old content. For consumers, choosing which streaming platform to subscribe to is becoming harder than ever. Our goal is to provide insights on which platform offers the best value for movie lovers and help users make informed decisions when choosing a streaming service. We will focus on analyzing movies available on Netflix and Amazon Prime to determine which platform offers a better selection. We will be using data on movie ratings, duration, genre and other relevant features to compare the two platforms.
 
 ![movie_ss](assets/images/movies_ss.png)  
 *[source](https://blog.reelgood.com/which-streaming-service-offers-the-best-bang-for-your-buck)*
 
 
-# Motivation
-We constructed our dataset by using the imdb movie data and augmenting it with the availability on the corresponding 
-streaming service using the moviedb api. For each movie in the imdb dataset we made a call to the api to check the movie 
-is available on which streaming service. We then explored our obtained dataset and decided to focus our study on the US market, because this is where we had the most data.
+# Where's your favorite movie?
 
-After that we looked at the different streaming services and found that we had the most data for Netflix and Amazon Prime, 
-so we decided to focus our study on these two platforms. After constructing our dataset we ended up with 6981 movies for 
-Amazon Prime, and 2915 movies on Netflix. Using the blog post above, if we assume that the movies on those two platforms
-did not change we would have 99% of movies on Prime and 60% of movies on Netflix. We will see in the following parts how we 
-will handle this issue.
+As streaming platforms continue to grow and evolve, it can be difficult to keep track of what movies are available on which platforms. Netflix and Amazon Prime don't provide data about the movies they are offering. Addintionaly, there are no up to date datasets about movies on different platform. Therefore, we decided to take matters into our own hands.
 
-To measure quality we decided to use the imdb rating, because it is a well known metric and it is used by many people to
-decide which movie to watch. 
+To construct our dataset, we used the IMDb movie data and augmented it with information on which streaming services each movie was available on, using the MovieDB API. For each movie in the IMDb dataset, we made a call to the API to check which streaming platforms it was available on. 
 
 ![construction](assets/images/construction.jpeg)  
 
+We then explored our obtained dataset and decided to focus our analysis on the US market, where the competition between streaming platforms is fierce. After looking at the various streaming services, we found that we had the most data for movies available on Netflix and Amazon Prime. In total, we ended up with 6981 movies for Amazon Prime and 2915 movies for Netflix. If we assume that the movie offerings on these two platforms did not change, we would have access to 99% of movies on Prime and 60% of movies on Netflix. In the following sections of our data story, we'll explore how we can handle this issue and compare the movies on these platforms in more detail.
 
-# Exploration and Preleminary Findings
+-- INFO, PLOTS ABOUT MOVIES ON US COMPARED TO MOVIES ON OTHER COUNTRIES, PLOTS COMPARINF NUMBER OF MOVIES ON AMAZON AND PRIME
+
+In the following sections, we'll delve deeper into the data and compare the ratings, genres, and other features of the movies on Netflix and Amazon Prime to see which platform offers the best value for movie lovers. Stay tuned to see the results of our analysis!
+
+
+# Let's explore and compare both platforms
+
+Several factors can be considered when comparing Amazon Prime and Netflix movies
+
+
+Maps
+Netflix in general has more international movies than Prime
+
+### Runtime in minutes, Release Year and Number of Votes Distribution, 
+{% include features_before_matching.html %}
 
 ### IMDB Rating Distribution
+To measure the quality of the movies on each platform, we decided to use the IMDb rating as our metric. IMDb ratings are well known and widely used to decide which movies to watch
+
 {% include ratings_before_matching.html %}
 
 ### Runtime in minutes, Release Year and Number of Votes Distribution
