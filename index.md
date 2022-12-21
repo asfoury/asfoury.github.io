@@ -2,7 +2,7 @@
 layout: default
 ---
 
-# The Streaming war 
+# A fierce war 
 
 Streaming services’ market is considerably growing each year. They are revolutionizing the movie industry. For a long period of time, Netflix was dominating the market in all aspects. Now the streaming war is raging on. The King is being overtaken by growing competitors like Disney plus, Amazon Prime and HBO. To come on top of this furious battle, each streaming service is now launching its own content in addition to acquiring old content. For consumers, choosing which streaming platform to subscribe to is becoming harder than ever. Our goal is to provide insights on which platform offers the best value for movie lovers and help users make informed decisions when choosing a streaming service. We will focus on analyzing movies available on Netflix and Amazon Prime to determine which platform offers a better selection. We will be using data on movie ratings, duration, genre and other relevant features to compare the two platforms.
 
@@ -29,30 +29,20 @@ In the following sections, we'll delve deeper into the data and compare the rati
 
 Several factors can be considered when comparing Amazon Prime and Netflix movies
 
-
-Maps
+### International movies
+{% include worldmap.html %}
+# [🔎 🗺️](another-page.md)
 Netflix in general has more international movies than Prime
 
-### Runtime in minutes, Release Year and Number of Votes Distribution, 
-{% include features_before_matching.html %}
-
-### IMDB Rating Distribution
-To measure the quality of the movies on each platform, we decided to use the IMDb rating as our metric. IMDb ratings are well known and widely used to decide which movies to watch
-
-{% include ratings_before_matching.html %}
-
-### Runtime in minutes, Release Year and Number of Votes Distribution
-{% include features_before_matching.html %}
 ### Genres Radar Chart 
-
 {% include radar.html %}
 
 ### Writers and Directors Distribution
 {% include directors.html %}
 ### Production Companies Map
 
-{% include worldmap.html %}
-# [🔎 🗺️](another-page.md)
+### Runtime in minutes, Release Year, ###### ADD REVENUE
+{% include features_before_matching.html %}
 
 ### Sentiment & Topics on Prime and Netflix
 
@@ -65,8 +55,28 @@ The two plots below show you the distribution of polarity and subjectivity for N
 
 ## Hypothesis and Strategy motivation
 
+### IMDB Rating Distribution and Number of Votes Distribution
+IMDb allows users to rate films on a scale of 1 to 10, and these ratings are used to calculate a weighted average for 
+each film, series, and so on. IMDb uses filters to ensure the accuracy and legitimacy of these ratings, and the 
+specific method for doing so is not publicly disclosed in order to prevent attempts to manipulate the system. 
+It is worth noting that the weighted average may sometimes differ significantly from the arithmetic mean due 
+to these filters.
+
+{% include ratings_before_matching.html %}
+
+In general, Netflix movies have higher frequency of average rated movies than Amazon Prime. Is this comparison reliable?
+Is it valid to compare a comedy movie with an action movie? Is it valid to compare a 1 
+hour movie with a 3 hours movie? 
+
+These are all confounding variables that complicate the interpretation of our study results to determine if Netflix 
+has really higher quality of movies.
+
 
 # Observational Study
+
+Matching is a useful tool for helping to control for confounding variables in observational studies, 
+which can help to increase the validity and reliability of the study results.
+
 ### Features after matching
 {% include features_after_matching.html %}
 ### Matching without directors
