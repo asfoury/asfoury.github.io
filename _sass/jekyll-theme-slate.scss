@@ -45,7 +45,7 @@ Theme Styles
 
 body {
   box-sizing: border-box;
-  color:#373737;
+  color:#ffffff;
   background: #212121;
   font-size: 16px;
   font-family: 'Myriad Pro', Calibri, Helvetica, Arial, sans-serif;
@@ -56,7 +56,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
   margin: 10px 0;
   font-weight: 700;
-  color:#222222;
+  color:#ffffff;
   font-family: 'Lucida Grande', 'Calibri', Helvetica, Arial, sans-serif;
   letter-spacing: -1px;
 }
@@ -133,16 +133,16 @@ strong {
 img {
   position: relative;
   margin: 0 auto;
-  max-width: 739px;
+  max-width: 1000px;
   padding: 5px;
   margin: 10px 0 10px 0;
-  border: 1px solid #ebebeb;
+  border: 0px solid #ebebeb;
 
-  box-shadow: 0 0 5px #ebebeb;
-  -webkit-box-shadow: 0 0 5px #ebebeb;
-  -moz-box-shadow: 0 0 5px #ebebeb;
-  -o-box-shadow: 0 0 5px #ebebeb;
-  -ms-box-shadow: 0 0 5px #ebebeb;
+  box-shadow: 0 0 0px #ebebeb;
+  -webkit-box-shadow: 0 0 0px #ebebeb;
+  -moz-box-shadow: 0 0 0px #ebebeb;
+  -o-box-shadow: 0 0 0px #ebebeb;
+  -ms-box-shadow: 0 0 0px #ebebeb;
 }
 
 p img {
@@ -275,7 +275,7 @@ Full-Width Styles
 
 .inner {
   position: relative;
-  max-width: 640px;
+  max-width: 1000px;
   padding: 20px 10px;
   margin: 0 auto;
 }
@@ -296,12 +296,12 @@ Full-Width Styles
 }
 
 #header_wrap {
-  background: #232f3e;
-  background: -moz-linear-gradient(top,	#232f3e,  #232f3e );
-  background: -webkit-linear-gradient(top,	#232f3e,  #232f3e);
-  background: -ms-linear-gradient(top, 	#232f3e,  #232f3e);
-  background: -o-linear-gradient(top,	#232f3e,  #232f3e);
-  background: linear-gradient(to top, 	#232f3e,  #232f3e);
+  background: #B33030;
+  background: -moz-linear-gradient(top,	#B33030,  #B33030 );
+  background: -webkit-linear-gradient(top,	#B33030,  #B33030);
+  background: -ms-linear-gradient(top, 	#B33030,  #B33030);
+  background: -o-linear-gradient(top,	#B33030,  #B33030);
+  background: linear-gradient(to top, 	#B33030,  #B33030);
 }
 
 #header_wrap .inner {
@@ -364,7 +364,7 @@ Full-Width Styles
 }
 
 #main_content_wrap {
-  background: #f2f2f2;
+  background: #282828;
   border-top: 1px solid #111;
   border-bottom: 1px solid #111;
 }
@@ -374,7 +374,7 @@ Full-Width Styles
 }
 
 #footer_wrap {
-  background: #232f3e;
+  background: #B33030;
 }
 
 

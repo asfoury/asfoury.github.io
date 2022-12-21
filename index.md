@@ -2,42 +2,65 @@
 layout: default
 ---
 
-# Graph 1 
+# Introduction
 
-This chart shows the percentage of total sales that each product category contributes. The x-axis represents the product categories, while the y-axis shows the percentage of total sales. The chart reveals that the largest contributor to total sales is the "Fashion" category, which makes up 35% of total sales. The "Electronics" category is the second largest contributor, making up 25% of total sales. The "Home goods" category comes in third, making up 20% of total sales. The "Outdoor equipment" and "Toys" categories make up the remaining 20% of total sales, with each category contributing 10% of total sales. Overall, this chart illustrates the relative importance of each product category in terms of its contribution to the company's total sales.
+Streaming services’ market is considerably growing each year. They are revolutionizing the movie industry. For a long period of time, Netflix was dominating the market in all aspects. Now the streaming war is raging on. The King is being overtaken by growing competitors like Disney plus, Amazon Prime and HBO. To come on top of this furious battle, each streaming service is now launching its own content in addition to acquiring old content. For consumers, choosing which streaming platform to subscribe to is becoming harder than ever. Our goal is to provide insights on which platform offers the best value for movie lovers and help users make informed decisions when choosing a streaming service. We will focus on analyzing movies available on Netflix and Amazon Prime to determine which platform offers a better selection. We will be using data on movie ratings, genre, and other relevant features to compare the two platforms.
 
-{% include plotly_graph.html %}
+![movie_ss](assets/images/movies_ss.png)  
+*[source](https://blog.reelgood.com/which-streaming-service-offers-the-best-bang-for-your-buck)*
 
-# Production companies
+
+# Motivation
+We constructed our dataset by using the imdb movie data and augmenting it with the availability on the corresponding 
+streaming service using the moviedb api. For each movie in the imdb dataset we made a call to the api to check the movie 
+is available on which streaming service. We then explored our obtained dataset and decided to focus our study on the US market, because this is where we had the most data.
+
+After that we looked at the different streaming services and found that we had the most data for Netflix and Amazon Prime, 
+so we decided to focus our study on these two platforms. After constructing our dataset we ended up with 6981 movies for 
+Amazon Prime, and 2915 movies on Netflix. Using the blog post above, if we assume that the movies on those two platforms
+did not change we would have 99% of movies on Prime and 60% of movies on Netflix. We will see in the following parts how we 
+will handle this issue.
+
+To measure quality we decided to use the imdb rating, because it is a well known metric and it is used by many people to
+decide which movie to watch. 
+
+![construction](assets/images/construction.jpeg)  
+
+
+# Exploration and Preleminary Findings
+
+### IMDB Rating Distribution
+{% include ratings_before_matching.html %}
+
+### Runtime in minutes, Release Year and Number of Votes Distribution
+{% include features_before_matching.html %}
+### Genres Radar Chart 
+TODO
+
+### Writers and Directors Distribution
+TODO
+### Production Companies Map
 
 {% include worldmap.html %}
-
 # [🔎 🗺️](another-page.md)
 
-## Header 2
+### Sentiment & Topics on Prime and Netflix
+{% include sentiments.html %}
+<br/><br/>
+{% include topic_distribution.html %}
 
-> This is a blockquote following a header.
->
-> When something is important enough, you do it even if the odds are not in your favor.
+## Hypothesis and Strategy motivation
 
-### Header 3
 
-```js
-// Javascript code with syntax highlighting.
-var fun = function lang(l) {
-  dateformat.i18n = require('./lang/' + l)
-  return true;
-}
-```
+# Observational Study
+### Features after matching
+{% include features_after_matching.html %}
+### Matching without directors
+{% include ratings_after_matching.html %}
+### Matching directors 
+{% include ratings_after_matching_director.html %}
 
-```ruby
-# Ruby code with syntax highlighting
-GitHubPages::Dependencies.gems.each do |gem, version|
-  s.add_dependency(gem, "= #{version}")
-end
-```
-
-#### Header 4
+# Conclusion
 
 *   This is an unordered list following a header.
 *   This is an unordered list following a header.
