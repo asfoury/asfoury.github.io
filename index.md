@@ -46,6 +46,10 @@ decide which movie to watch.
 # [🔎 🗺️](another-page.md)
 
 ### Sentiment & Topics on Prime and Netflix
+
+In our research to determine if Netflix had better quality movies than Amazon Prime, we looked at the description of the movies. First, we were interested in the sentimental aspect of these descriptions. The sentiment of a movie can be defined by two values: polarity and subjectivity. The polarity determines how negative/positive a text is, and the subjectivity how objective/subjective it is.  
+The two plots below show you the distribution of polarity and subjectivity for Netflix and Prime. We can see that Prime has slightly more negative movie descriptions than Netflix. This difference in distribution could have an effect on the rating of movies between the different platforms. Indeed, it could be possible that movies with a "negative" feeling are less well rated in general or vice versa. In order to have the most robust comparison possible between the ratings of Neflix and Prime, we will therefore take into account the polarity of the films in our observational study, in order to limit this potential bias as much as possible. Subjectivity would rather allow us to choose which films we would choose for our observational study. Indeed, objective descriptions (thus with a subjectivity score close to zero) would be more rigorous to analyze, because it limits a certain bias towards the films. However, given the distribution, keeping only the films with a low subjectivity would have left us with too few films, impacting too much the robustness of our observational study. For this reason we did not keep this metric in the rest of our analysis. 
+
 {% include sentiments.html %}
 <br/><br/>
 {% include topic_distribution.html %}
@@ -76,7 +80,7 @@ decide which movie to watch.
 ###### Header 6
 
 | head1        | head two          | three |
-|:-------------|:------------------|:------|
+| :----------- | :---------------- | :---- |
 | ok           | good swedish fish | nice  |
 | out of stock | good and plenty   | nice  |
 | ok           | good `oreos`      | hmm   |
