@@ -35,10 +35,11 @@ decide which movie to watch.
 ### Runtime in minutes, Release Year and Number of Votes Distribution
 {% include features_before_matching.html %}
 ### Genres Radar Chart 
-TODO
+
+{% include radar.html %}
 
 ### Writers and Directors Distribution
-TODO
+{% include directors.html %}
 ### Production Companies Map
 
 {% include worldmap.html %}
