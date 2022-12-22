@@ -59,6 +59,9 @@ Then we are interested in a Latent Dirichlet Allocation (LDA) to extract topics 
 
 {% include topic_distribution.html %}
 
+Add comment here
+![topics](assets/images/wordcloud.png)
+
 ## Hypothesis and Strategy motivation
 
 ### IMDB Rating Distribution and Number of Votes Distribution
