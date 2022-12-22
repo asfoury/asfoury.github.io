@@ -51,6 +51,9 @@ The two plots below show you the distribution of polarity and subjectivity for N
 
 {% include sentiments.html %}
 <br/><br/>
+
+Then we are interested in a Latent Dirichlet Allocation (LDA) to extract topics from the movie description. Once twelve topics were extracted, we computed for each streaming service and each of their movies, the distribution among these topics. We then aggregated the results by grouping the distribution by streaming service, and obtained the graph below. We can see that Netflix and Prime seem to have almost exactly the same distribution of topics. This may be due to a weak LDA model, or to the fact that the selected topics do not allow to differentiate between Netflix and Prime. We have seen that the distribution of movie categories differed between Netflix and Prime, however to observe the same distribution in our topics, we would need each topic to represent a genre, and the movie description to match this genre in our LDA model.  Given the similar distribution of topics on the two streaming services, we therefore did not consider them for our observational study.
+
 {% include topic_distribution.html %}
 
 ## Hypothesis and Strategy motivation
