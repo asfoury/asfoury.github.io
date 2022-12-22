@@ -59,7 +59,9 @@ Then we are interested in a Latent Dirichlet Allocation (LDA) to extract topics 
 
 {% include topic_distribution.html %}
 
-Add comment here
+Below are represented as wordcloud important words of three of the topics we found. First one one left is 
+"The Search for Purpose" then  "Love and Romance" and finally "Crime and Punishment". We see words in each 
+wordcloud related to the topic, but there are also some outliers in each wordcloud, proving our LDA may not be perfect.
 ![topics](assets/images/wordcloud.png)
 
 ## Hypothesis and Strategy motivation
