@@ -45,13 +45,7 @@ This radar chart shows the ten most common genres on both platforms. It appears 
 
 This bar plot represents the distribution of twenty directors with most movies on both platforms. Do you recognize any of them? 
 
-### Runtime in minutes, Release Year, Number of Votes, and The sentiment
-{% include features_before_matching.html %}
-
-As we can see in the plots above, the distribution of runtime, release year, the number of votes, and sentiment are different on the platforms. Thus we cannot simply compare the average of the movies on the two platforms and conclude that one platform offers better movies. We need to take into account the differences in the distribution of the features.
-
-
-### Sentiment & Topics on Prime and Netflix
+### With your favorite Topics and Sentiments?
 
 In our research, we set out to compare the quality of movies on Netflix and Amazon Prime. To do this, we examined the descriptions of the movies on each platform.
 
@@ -75,6 +69,11 @@ In order to observe a difference in the distribution of topics between Netflix a
 Below are represented as word clouds important words of three of the topics we found. The first one on the left is “The Search for Purpose” then “Love and Romance” and finally “Crime and Punishment”. We see words in each word cloud related to the topic, but there are also some outliers in each word cloud, proving our LDA may not be perfect.
 
 ![topics](assets/images/wordcloud.png)
+
+### What about other features?
+{% include features_before_matching.html %}
+
+As we can see in the plots above, the distribution of the runtime, the release year, the number of votes, and the sentiment are different on the two platforms. Thus we cannot simply compare the average IMDb rating of movies on the two platforms and conclude that one platform offers better movies. We need to take into account the differences in the distribution of the features.
 
 ## Hypothesis and Strategy motivation
 
