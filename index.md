@@ -136,7 +136,7 @@ There is an edge between two movies if:
 
 This insures that the matched movies will have similar features and by not only relying on the similarity score, we also have a speedup in the matching process because a lot of potential edges are eliminated.
 
-Here is a link to an interactive version of the graph: [*Our Matchings Graph*](https://matchings-graph.best-ada-project.ch)
+Here is a link to an interactive version of the graph: [*Our Matchings Graph*](https://gavinkaa.github.io/ada-exploration-graph/)
 
 ### Features after matching
 {% include features_after_matching.html %}
