@@ -103,6 +103,15 @@ Movies can have different features, such as genre or release year, running time,
 
 To do this, we will conduct an observational study. By carefully selecting movies with similar features and matching them, we can reduce the impact of these features on the ratings and get a more accurate comparison of the quality of movies on Netflix and Prime.
 
+Here are the features we considered when matching movies on Netflix and Amazon Prime:
+* averageRating : the average rating of a movie on IMDb
+* numVotes : the number of votes a movie has received on IMDb
+* release_year : the year a movie was released
+* runtimeMinutes : the length of a movie in minutes
+* sentiments_polarity : the sentiment and the polarity of a movie's description
+* genres : the genres of a movie
+* production_countries : the countries where a movie was produced
+
 ### Features after matching
 {% include features_after_matching.html %}
 ### Matching without directors
