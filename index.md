@@ -111,20 +111,37 @@ Here are the features we considered when matching movies on Netflix and Amazon P
 * Sentiments and polarity of the overview : the sentiment and the polarity of a movie's description
 * Genres : the genres of a movie
 * Production Countries : the countries where a movie was produced
+### Graph with potential matchings 
+
+<br/><br/>
+
+<img src="assets/images/matching_movies.png" alt="drawing" style="height:90vh;display: block; margin: 0 auto"/>
+
+<br/><br/>
+
+The nodes in this graph represent the movies in our dataset, and there exists an edge between two nodes if they could 
+potentially be matched. 
+
+There is an edge between two movies if:
+* They have the same genres
+* They have the same production countries
+* They have a similarity score greater than a threshold
+
+This insures that the matched movies will have similar features and by not only relying on the similarity score,
+we have a speedup in the matching process because a lot of potential edges are eliminnated.
+
+Here is a link to an interactive version of the graph: [*Our Matchings Graph*](https://matchings-graph.best-ada-project.ch)
 
 ### Features after matching
 {% include features_after_matching.html %}
 
-Netflix still has higher rate movies than Prime.
+After our matching process, the distributions became much more similar! This is a great indication that our matching was effective and now we can confidently compare the ratings on both platforms without bias.
 
-### Matching without directors
+### Matching without production countries
 {% include ratings_after_matching.html %}
 
-### Matching directors 
-{% include ratings_after_matching_director.html %}
-
-### Graph with nodes
-{% include ratings_after_matching_director.html %}
+### Matching with the production countries 
+{% include ratings_after_matching_countries.html %}
 
 # Conclusion
 
