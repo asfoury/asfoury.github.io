@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<center> <h1>Does Netflix have better quality movies than Amazon Prime?</h1> </center>
+<center> <h1>Does Netflix offer higher quality movies than Amazon Prime?</h1> </center>
 
 # A fierce war 
 
@@ -25,27 +25,30 @@ We then explored our obtained dataset and decided to focus our analysis on the U
 
 -- INFO, PLOTS ABOUT MOVIES ON US COMPARED TO MOVIES ON OTHER COUNTRIES, PLOTS COMPARINF NUMBER OF MOVIES ON AMAZON AND PRIME
 
-In the following sections, we'll delve deeper into the data and compare the ratings, genres, and other features of the movies on Netflix and Amazon Prime to see which platform offers the best value for movie lovers. Stay tuned to see the results of our analysis!
+In the following sections, we'll delve deeper into the data and compare the ratings, genres, and other features of the movies on Netflix and Amazon Prime to see which platform offers the best value for movie lovers. 
 
+# Let's explore 
 
-# Let's explore and compare both platforms
+### Looking for international movies?
 
-Several factors can be considered when comparing Amazon Prime and Netflix movies
+This map represents the frequency of movies per production countrie. International movies are more frequent on Netflix than on Prime.
 
-### International movies
 {% include worldmap.html %}
 # [🔎 🗺️](another-page.md)
-Netflix in general has more international movies than Prime
 
-### Genres Radar Chart 
+
+### With your favorite genre?
 {% include radar.html %}
 
 We can see that the genres are distributed in a similar way on both platforms, with the two streaming services having more drama movies than any other genre.
 
 
-### Writers and Directors Distribution
+This radar chart shows the 10 most common genres on both platforms. It appears that the genres are distributed similarly, with drama being the most common. However, the distribution is not equal. For instance, comedy movies are more frequent on Nteflix than on Prime.
+
+### With your favorite director?
 {% include directors.html %}
-### Production Companies Map
+
+This bar plot represents the distribution of 20 directors with most movies on both platforms. Do you recognize any of them? 
 
 ### Runtime in minutes, Release Year, Number of Votes and The sentiment
 {% include features_before_matching.html %}
@@ -89,13 +92,10 @@ It's also worth noting that the weighted average may sometimes differ significan
 
 {% include ratings_before_matching.html %}
 
-In general, Netflix movies have higher frequency of average rated movies than Amazon Prime. Is this comparison reliable?
-Is it valid to compare a comedy movie with an action movie? Is it valid to compare a 1 
+In general, Netflix movies have higher frequency of average rated movies than Amazon Prime. Is this comparison reliable? Is it valid to compare a comedy movie with an action movie? Is it valid to compare a 1 
 hour movie with a 3 hours movie? 
 
-These are all confounding variables that complicate the interpretation of our study results to determine if Netflix 
-has really higher quality of movies.
-
+These are all confounding variables that complicate the interpretation of our study results to determine if Netflix has really higher quality of movies.
 
 # Observational Study
 
@@ -114,13 +114,24 @@ Here are the features we considered when matching movies on Netflix and Amazon P
 
 ### Features after matching
 {% include features_after_matching.html %}
+
+Netflix still has higher rate movies than Prime.
+
 ### Matching without directors
 {% include ratings_after_matching.html %}
+
 ### Matching directors 
+{% include ratings_after_matching_director.html %}
+
+### Graph with nodes
 {% include ratings_after_matching_director.html %}
 
 # Conclusion
 
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
+In conclusion, our study found that, in general, Netflix movies have a higher frequency of average rated movies than Amazon Prime movies. However, this comparison is not necessarily reliable due to the presence of confounding variables, such as genre and running time, which can complicate the interpretation of the results.
+
+To address this issue, we used matching techniques to control for these confounding variables in our analysis. By matching movies on Amazon Prime and Netflix based on genre and running time, we were able to better compare movies that are more similar in terms of these factors. Our results showed that, even after matching, Netflix movies still had a higher frequency of average rated movies compared to Amazon Prime movies.
+
+However, when we also matched movies based on the director, we found that the difference in frequency of average rated movies between the two platforms was not statistically significant. This suggests that the director may be an important confounding variable to consider when comparing the quality of movies on these platforms.
+
+Overall, our study highlights the importance of considering confounding variables in observational studies, and the usefulness of matching techniques in controlling for these variables. While our results suggest that Netflix movies may have a higher quality compared to Amazon Prime movies, further research is needed to fully understand the factors that contribute to this difference
