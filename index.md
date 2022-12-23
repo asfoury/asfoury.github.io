@@ -27,7 +27,7 @@ In the following sections, we’ll delve deeper into the data and compare the ra
 
 ### Looking for international movies?
 
-This map represents the number of movies per production country. We see a higher number of movies produced in the US, which means that we can use this feature in our observational study as it does not limit the number of movies at our disposal.
+This map represents the number of movies per production country. We see a higher number of movies produced in the US.
 
 
 
