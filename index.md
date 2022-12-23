@@ -45,7 +45,7 @@ This radar chart shows the ten most common genres on both platforms. It appears 
 
 This bar plot represents the distribution of twenty directors with most movies on both platforms. Do you recognize any of them? 
 
-### With your favorite Topics and Sentiments?
+### With your favorite topics and sentiments?
 
 In our research, we set out to compare the quality of movies on Netflix and Amazon Prime. To do this, we examined the descriptions of the movies on each platform.
 
