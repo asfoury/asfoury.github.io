@@ -40,22 +40,36 @@ Netflix in general has more international movies than Prime
 ### Genres Radar Chart 
 {% include radar.html %}
 
+We can see that the genres are distributed in a similar way on both platforms, with the two streaming services having more drama movies than any other genre.
+
+
 ### Writers and Directors Distribution
 {% include directors.html %}
 ### Production Companies Map
 
-### Runtime in minutes, Release Year, ###### ADD REVENUE
+### Runtime in minutes, Release Year, Number of Votes and The sentiment
 {% include features_before_matching.html %}
+
+
 
 ### Sentiment & Topics on Prime and Netflix
 
-In our research to determine if Netflix had better quality movies than Amazon Prime, we looked at the description of the movies. First, we were interested in the sentimental aspect of these descriptions. The sentiment of a movie can be defined by two values: polarity and subjectivity. The polarity determines how negative/positive a text is, and the subjectivity how objective/subjective it is.  
-The two plots below show you the distribution of polarity and subjectivity for Netflix and Prime. We can see that Prime has slightly more negative movie descriptions than Netflix. This difference in distribution could have an effect on the rating of movies between the different platforms. Indeed, it could be possible that movies with a "negative" feeling are less well rated in general or vice versa. In order to have the most robust comparison possible between the ratings of Neflix and Prime, we will therefore take into account the polarity of the films in our observational study, in order to limit this potential bias as much as possible. Subjectivity would rather allow us to choose which films we would choose for our observational study. Indeed, objective descriptions (thus with a subjectivity score close to zero) would be more rigorous to analyze, because it limits a certain bias towards the films. However, given the distribution, keeping only the films with a low subjectivity would have left us with too few films, impacting too much the robustness of our observational study. For this reason we did not keep this metric in the rest of our analysis. 
+Are you ready to dive into the world of movie ratings? In our research, we set out to compare the quality of movies on Netflix and Amazon Prime. To do this, we examined the descriptions of the movies on each platform.
+
+One aspect of movie descriptions that can be helpful in analyzing their quality is sentiment. Sentiment is made up of two values: polarity and subjectivity. Polarity refers to how positive or negative a movie's description is, while subjectivity measures how objective or subjective it is.
+
+We plotted the distribution of polarity and subjectivity for movies on both Netflix and Amazon Prime, and found that Prime had slightly more negative movie descriptions than Netflix. This difference in distribution could potentially impact the ratings of movies on the two platforms. For example, it's possible that movies with a "negative" feeling are rated lower overall, or vice versa.
+
+To ensure that our comparison of movie ratings on Netflix and Prime was as unbiased as possible, we decided to take the polarity of the movies into account in our observational study. We also considered using subjectivity to select movies for our study, as objective descriptions (with a subjectivity score close to zero) would be more reliable to analyze. However, limiting our selection to movies with low subjectivity would have left us with too few films, compromising the robustness of our study. As a result, we did not include subjectivity in the rest of our analysis.
 
 {% include sentiments.html %}
 <br/><br/>
 
-Then we are interested in a Latent Dirichlet Allocation (LDA) to extract topics from the movie description. Once twelve topics were extracted, we computed for each streaming service and each of their movies, the distribution among these topics. We then aggregated the results by grouping the distribution by streaming service, and obtained the graph below. We can see that Netflix and Prime seem to have almost exactly the same distribution of topics. This may be due to a weak LDA model, or to the fact that the selected topics do not allow to differentiate between Netflix and Prime. We have seen that the distribution of movie categories differed between Netflix and Prime, however to observe the same distribution in our topics, we would need each topic to represent a genre, and the movie description to match this genre in our LDA model.  Given the similar distribution of topics on the two streaming services, we therefore did not consider them for our observational study.
+To gain a deeper understanding of the movies on Netflix and Amazon Prime, we used a technique called Latent Dirichlet Allocation (LDA) to extract topics from their descriptions. After extracting twelve topics, we calculated the distribution of these topics for each movie on each platform.
+
+When we plotted the results, we found that the distribution of topics for Netflix and Amazon Prime was almost exactly the same. This could be due to a weak LDA model, or it could be that the selected topics weren't specific enough to differentiate between the two platforms.
+
+In order to observe a difference in the distribution of topics between Netflix and Prime, each topic would need to represent a specific genre and the movie descriptions would need to match this genre in the LDA model. Since the distribution of topics was similar on both platforms, we did not consider them in our observational study.
 
 {% include topic_distribution.html %}
 
@@ -65,11 +79,11 @@ Add comment here
 ## Hypothesis and Strategy motivation
 
 ### IMDB Rating Distribution and Number of Votes Distribution
-IMDb allows users to rate films on a scale of 1 to 10, and these ratings are used to calculate a weighted average for 
-each film, series, and so on. IMDb uses filters to ensure the accuracy and legitimacy of these ratings, and the 
-specific method for doing so is not publicly disclosed in order to prevent attempts to manipulate the system. 
-It is worth noting that the weighted average may sometimes differ significantly from the arithmetic mean due 
-to these filters.
+IMDb is a great resource for film ratings, as users can rate movies on a scale of 1 to 10. These ratings are then used to calculate a weighted average for each film, series, and so on.
+
+But how do we know that these ratings are accurate and legitimate? IMDb uses filters to ensure the integrity of their ratings, though the specific method for doing so is kept confidential to prevent manipulation of the system.
+
+It's also worth noting that the weighted average may sometimes differ significantly from the arithmetic mean due to these filters. So, next time you're looking for a new movie to watch, don't forget to check out the ratings on IMDb!
 
 {% include ratings_before_matching.html %}
 
