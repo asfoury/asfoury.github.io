@@ -171,11 +171,11 @@ Here are the p-values that the two streaming services have equal means for the f
 
 # Conclusion
 
-In conclusion, our study found that, in general, Netflix movies have a higher frequency of average-rated movies than Amazon Prime movies. However, this comparison is not necessarily reliable due to the presence of confounding variables, such as genre and running time, which can complicate the interpretation of the results.
+In conclusion, our study found that, in general, Netflix movies have a higher average rating than Amazon Prime movies. However, this comparison is not necessarily reliable due to the presence of confounding variables, such as genre and running time, which can complicate the interpretation of the results.
 
 To address this issue, we used matching techniques to control for these confounding variables in our analysis. By matching movies on Amazon Prime and Netflix based on genre, running time, number of votes, and polarity of the overview we were able to better compare movies that are more similar in terms of these factors. Our results showed that, even after matching, 
+Netflix still had higher rated movies compared to Amazon Prime.
 
-Netflix movies still had higher rated movies compared to Amazon Prime movies.
-However, when we also matched movies based on the production country, we found the same result that Netflix movies have higher-rated movies.
+We also tried to includ the production country, and found that the results were similar to the ones we got when we did not.
 
 Overall, our study highlights the importance of considering confounding variables in observational studies, and the usefulness of matching techniques in controlling for these variables. While our results suggest that Netflix movies may have a higher quality compared to Amazon Prime movies, further research is needed to fully understand the factors that contribute to this difference.
