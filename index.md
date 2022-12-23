@@ -52,8 +52,6 @@ One aspect of movie descriptions that can be helpful in analyzing their quality 
 
 We plotted the distribution of polarity and subjectivity for movies on both Netflix and Amazon Prime, and found that Prime had slightly more negative movie descriptions than Netflix. This difference in distribution could potentially impact the ratings of movies on the two platforms. For example, it's possible that movies with a "negative" feeling are rated lower overall, or vice versa.
 
-To ensure that our comparison of movie ratings on Netflix and Prime was as unbiased as possible, we decided to take the polarity of the movies into account in our observational study. We also considered using subjectivity to select movies for our study, as objective descriptions (with a subjectivity score close to zero) would be more reliable to analyze. However, limiting our selection to movies with low subjectivity would have left us with too few films, compromising the robustness of our study. As a result, we did not include subjectivity in the rest of our analysis.
-
 {% include sentiments.html %}
 <br/><br/>
 
@@ -61,7 +59,6 @@ To gain a deeper understanding of the movies on Netflix and Amazon Prime, we use
 
 When we plotted the results, we found that the distribution of topics for Netflix and Amazon Prime was almost exactly the same. This could be due to a weak LDA model, or it could be that the selected topics weren't specific enough to differentiate between the two platforms.
 
-In order to observe a difference in the distribution of topics between Netflix and Prime, each topic would need to represent a specific genre and the movie descriptions would need to match this genre in the LDA model. Since the distribution of topics was similar on both platforms, we did not consider them in our observational study.
 
 {% include topic_distribution.html %}
 
@@ -104,6 +101,10 @@ These are all confounding variables that complicate the interpretation of our st
 # Observational Study
 
 Movies can have different features, such as genre or release year, and running time, which can influence the ratings of a movie. That’s why, to get an unbiased comparison of movie ratings on Netflix and Amazon Prime, it’s important to minimize the difference in features between the movies on each platform.
+
+In order to observe a difference in the distribution of topics between Netflix and Prime, each topic would need to represent a specific genre and the movie descriptions would need to match this genre in the LDA model we created. Since the distribution of topics was similar on both platforms, we did not consider them in our observational study.
+
+To ensure that our comparison of movie ratings on Netflix and Prime was as unbiased as possible, we decided to take the polarity of the movies into account in our observational study. We also considered using subjectivity to select movies for our study, as objective descriptions (with a subjectivity score close to zero) would be more reliable to analyze. However, limiting our selection to movies with low subjectivity would have left us with too few films, compromising the robustness of our study. As a result, we did not include subjectivity in the rest of our analysis.
 
 To do this, we will conduct an observational study. By carefully selecting movies with similar features and matching them, we can reduce the impact of these features on the ratings and get a more accurate comparison of the quality of movies on Netflix and Prime.
 
