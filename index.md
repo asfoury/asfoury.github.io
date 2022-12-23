@@ -54,7 +54,7 @@ We can see that the genres are distributed in a similar way on both platforms, w
 
 ### Sentiment & Topics on Prime and Netflix
 
-Are you ready to dive into the world of movie ratings? In our research, we set out to compare the quality of movies on Netflix and Amazon Prime. To do this, we examined the descriptions of the movies on each platform.
+In our research, we set out to compare the quality of movies on Netflix and Amazon Prime. To do this, we examined the descriptions of the movies on each platform.
 
 One aspect of movie descriptions that can be helpful in analyzing their quality is sentiment. Sentiment is made up of two values: polarity and subjectivity. Polarity refers to how positive or negative a movie's description is, while subjectivity measures how objective or subjective it is.
 
