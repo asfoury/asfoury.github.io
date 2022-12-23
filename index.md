@@ -99,8 +99,9 @@ has really higher quality of movies.
 
 # Observational Study
 
-Matching is a useful tool for helping to control for confounding variables in observational studies, 
-which can help to increase the validity and reliability of the study results.
+Movies can have different features, such as genre or release year, running time, which can influence the ratings of a movie. That's why, in order to get an unbiased comparison of movie ratings on Netflix and Amazon Prime, it's important to minimize the difference in features between the movies on each platform.
+
+To do this, we will conduct an observational study. By carefully selecting movies with similar features and matching them, we can reduce the impact of these features on the ratings and get a more accurate comparison of the quality of movies on Netflix and Prime.
 
 ### Features after matching
 {% include features_after_matching.html %}
