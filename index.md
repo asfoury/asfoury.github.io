@@ -47,7 +47,6 @@ This bar plot represents the distribution of twenty directors with most movies o
 
 ### With your favorite topics and sentiments?
 
-In our research, we set out to compare the quality of movies on Netflix and Amazon Prime. To do this, we examined the descriptions of the movies on each platform.
 
 One aspect of movie descriptions that can be helpful in analyzing their quality is sentiment. Sentiment is made up of two values: polarity and subjectivity. Polarity refers to how positive or negative a movie's description is, while subjectivity measures how objective or subjective it is.
 
