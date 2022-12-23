@@ -17,7 +17,7 @@ As streaming platforms continue to grow and evolve, it can be difficult to keep 
 
 To construct our dataset, we used the IMDb movie data and augmented it with information on which streaming services each movie was available on, using the MovieDB API. For each movie in the IMDb dataset, we made a call to the API to check which streaming platforms it was available on. 
 
-![construction](assets/images/construction.jpeg)  
+![construction](assets/images/construction.png)  
 
 We then explored our obtained dataset and decided to focus our analysis on the US market, where the competition between streaming platforms is fierce. After looking at the various streaming services, we found that we had the most data for movies available on Netflix and Amazon Prime. In total, we ended up with 6981 movies for Amazon Prime and 2915 movies for Netflix. If we assume that the movie offerings on these two platforms did not *[change](https://blog.reelgood.com/which-streaming-service-offers-the-best-bang-for-your-buck)*, we would have access to 99% of movies on Prime and 60% of movies on Netflix. In the following sections of our data story, we'll explore how we can handle this issue and compare the movies on these platforms in more detail.
 
@@ -104,13 +104,13 @@ Movies can have different features, such as genre or release year, running time,
 To do this, we will conduct an observational study. By carefully selecting movies with similar features and matching them, we can reduce the impact of these features on the ratings and get a more accurate comparison of the quality of movies on Netflix and Prime.
 
 Here are the features we considered when matching movies on Netflix and Amazon Prime:
-* averageRating : the average rating of a movie on IMDb
-* numVotes : the number of votes a movie has received on IMDb
-* release_year : the year a movie was released
-* runtimeMinutes : the length of a movie in minutes
-* sentiments_polarity : the sentiment and the polarity of a movie's description
-* genres : the genres of a movie
-* production_countries : the countries where a movie was produced
+* Average rating : the average rating of a movie on IMDb
+* Number of votes : the number of votes a movie has received on IMDb
+* Release year : the year a movie was released
+* Runtime : the length of a movie in minutes
+* Sentiments and polarity of the overview : the sentiment and the polarity of a movie's description
+* Genres : the genres of a movie
+* Production Countries : the countries where a movie was produced
 
 ### Features after matching
 {% include features_after_matching.html %}
